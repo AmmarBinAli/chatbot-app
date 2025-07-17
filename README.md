@@ -1,12 +1,61 @@
-# React + Vite
+ 🤖 AI Chatbot – Assignment 4 (Internee.pk)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A powerful AI Chatbot built with React.js, Node.js (Express), Clerk Authentication, MongoDB, and AssemblyAI. It features real-time AI responses, voice input, chat history, dark mode, and more.
 
-Currently, two official plugins are available:
+🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+✅ User Authentication – Powered by [Clerk](https://clerk.com)  
+✅ AI Integration – OpenRouter API using OpenAI's GPT-3.5 model  
+✅ Voice Input – AssemblyAI Whisper API for speech-to-text  
+✅ Chat History – Stored in MongoDB per user  
+✅ Dark Mode Toggle  
+✅ Streaming AI Responses (via Express Proxy)  
+✅ Responsive UI – TailwindCSS & ChatGPT-like design  
 
-## Expanding the ESLint configuration
+📦 Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Frontend: React.js, Tailwind CSS, Clerk, Vite
+- Backend: Node.js, Express.js, MongoDB, AssemblyAI, OpenRouter Proxy
+- APIs: OpenRouter (GPT-3.5), AssemblyAI (Whisper)
+- Auth: Clerk.dev
+- DB: MongoDB (Cloud Atlas)
+
+```🛠️ Installation Guide
+
+1. Clone the Repository
+
+bash
+git clone https://github.com/your-username/chatbot-app.git
+cd chatbot-app
+
+2. Set Up Environment Files
+
+🔐 backend/.env
+
+PORT=5000
+MONGO_URI=your_mongo_connection_string
+ASSEMBLY_API_KEY=your_assemblyai_api_key
+
+🔐 frontend/.env
+
+VITE_OPENROUTER_API_KEY=your_openrouter_api_key
+
+📁 Run the Project
+
+🖥️ Backend
+
+cd backend
+npm install
+node server.js
+
+🌐 Frontend
+
+npm install
+npm run dev
+
+🔒 Authentication
+This project uses Clerk.dev for user authentication. Replace Clerk keys in your frontend setup as required and ensure you're logged in to access protected features.
+
+
+
+
